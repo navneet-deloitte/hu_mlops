@@ -29,6 +29,6 @@ jobs:
     - name: Push the Test image
       run: docker push gunasiva/mlops:boston_pipeline_test
     - name: Build the Deploy image
-      run: docker build ./boston_housing/deploy_model --tag gunsiva/mlops:boston_pipeline_deploy_model
+      run: docker build ./boston_housing/deploy_model --tag gunasiva/mlops:boston_pipeline_deploy_model
     - name: Push the Deploy image
       run: docker push gunasiva/mlops:boston_pipeline_deploy_model
